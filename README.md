@@ -6,4 +6,4 @@ Run the MuiCache analysis script directly via CMD/PowerShell with elevated privi
 2. 📋 Copy and execute the following command:
 
 ```cmd
-powershell Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass && powershell Invoke-Expression (Invoke-RestMethod [https://raw.githubusercontent.com/iTzPieros/MuiCache-Parser/refs/heads/main/MuiCache.Ps1](https://raw.githubusercontent.com/iTzPieros/MuiCache-Parser/refs/heads/main/MuiCache.Ps1))
+powershell -NoProfile -ExecutionPolicy Bypass -Command "Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass ; Invoke-Expression (Invoke-RestMethod 'https://raw.githubusercontent.com/iTzPieros/MuiCache-Parser/refs/heads/main/MuiCache.Ps1')"
